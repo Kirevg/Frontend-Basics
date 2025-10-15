@@ -40,6 +40,14 @@ build/
 .env.test.local
 .env.production.local
 
+# Docker
+docker-compose.override.yml
+.docker/
+
+# Database
+*.db
+*.sqlite
+
 # Temporary files
 *.tmp
 *.temp
