@@ -40,6 +40,10 @@ build/
 .env.test.local
 .env.production.local
 
+# Remote database credentials
+.env.production
+.env.staging
+
 # Docker
 docker-compose.override.yml
 .docker/

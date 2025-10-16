@@ -70,3 +70,4 @@ code-server --bind-addr 0.0.0.0:8080
 2. **Дополнительные компьютеры:** Git + Cursor
 3. **Облачная разработка:** GitHub Codespaces
 4. **Мобильный доступ:** GitHub Mobile app
+

@@ -24,3 +24,4 @@ INSERT INTO projects (name, description, user_id) VALUES
 ('Frontend Basics', 'Learning project', 1),
 ('My App', 'Another project', 1)
 ON CONFLICT DO NOTHING;
+

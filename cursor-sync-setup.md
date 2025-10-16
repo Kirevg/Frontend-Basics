@@ -95,3 +95,4 @@ docker-compose up -d
 - **GitHub Mobile:** Просмотр кода
 - **GitHub Codespaces:** Полная среда разработки
 - **Terminal в браузере:** Базовые операции
+

@@ -1,0 +1,27 @@
+version: '3.8'
+
+# Конфигурация для работы с удаленной базой данных
+# Используйте этот файл когда база данных находится на внешнем сервере
+
+services:
+  # Только pgAdmin для управления удаленной базой
+  pgadmin:
+    image: dpage/pgadmin4:latest
+    container_name: frontend-basics-pgadmin
+    environment:
+      PGADMIN_DEFAULT_EMAIL: admin@example.com
+      PGADMIN_DEFAULT_PASSWORD: admin123
+    ports:
+      - "8080:80"
+    restart: unless-stopped
+
+  # Опционально: Redis для кэширования (если нужен)
+  redis:
+    image: redis:7-alpine
+    container_name: frontend-basics-redis
+    ports:
+      - "6379:6379"
+    restart: unless-stopped
+
+# Примечание: PostgreSQL база данных находится на внешнем сервере
+# Настройте подключение через переменные окружения в .env файле

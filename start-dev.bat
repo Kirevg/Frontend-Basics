@@ -32,3 +32,4 @@ pause > nul
 echo.
 echo Stopping database...
 docker-compose down
+
